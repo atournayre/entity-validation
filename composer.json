@@ -1,0 +1,22 @@
+{
+    "name": "atournayre/entity-validation",
+    "description": "Entity validation using Symfony Validator",
+    "type": "library",
+    "require": {
+        "php": ">=8.1",
+        "symfony/validator": "^6.1",
+        "symfony/form": "^6.1",
+        "doctrine/collections": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Atournayre\\EntityValidation\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "atournayre",
+            "email": "aurelien.tournayre@gmail.com"
+        }
+    ]
+}
