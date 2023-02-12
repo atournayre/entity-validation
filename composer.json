@@ -13,10 +13,18 @@
             "Atournayre\\EntityValidation\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Atournayre\\EntityValidation\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "atournayre",
             "email": "aurelien.tournayre@gmail.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "symfony/phpunit-bridge": "^6.2"
+    }
 }
