@@ -23,9 +23,9 @@ class ConstraintViolationListCollectionBuilder
         return new self();
     }
 
-    public function add($input, $constraint): static
+    public function add($input, $constraint, ?string $propertyPath = null): static
     {
-        $key = md5($input.microtime());
+        $key = $propertyPath ?? md5($input.microtime());
         $this->inputs[$key] = $input;
         $this->constraints[$key] = $constraint;
 

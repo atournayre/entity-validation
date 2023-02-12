@@ -25,7 +25,7 @@ class SimpleEntityConstraintValidator extends ConstraintValidator
         }
 
         return $constraintViolationListCollectionBuilder
-            ->add($value->email, new Assert\Email())
+            ->add($value->email, new Assert\Email(), 'email')
             ->build();
     }
 }
