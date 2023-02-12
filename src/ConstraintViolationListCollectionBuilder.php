@@ -8,8 +8,8 @@ use Symfony\Component\Validator\Validation;
 
 class ConstraintViolationListCollectionBuilder
 {
-    private array $inputs;
-    private array $constraints;
+    private array $inputs = [];
+    private array $constraints = [];
 
     /**
      * This class cannot be instantiated.
