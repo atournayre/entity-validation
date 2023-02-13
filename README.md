@@ -68,6 +68,8 @@ class YourEntityConstraintValidator extends ConstraintValidator
         return $constraintViolationListCollectionBuilder
             // Suppose YourEntity has method getEmail()
             ->add($value->getEmail(), new Assert\Email())
+            // You can also specify propertyPath to get error attached properly in the form
+            //->add($value->getEmail(), new Assert\Email(), 'email')
             ->build();
     }
 }
